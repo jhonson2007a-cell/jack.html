@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--part 1.1 <input id="a" type="number" value="12">
+<select id="operator">
+    <option>+</option><option>-</option><option>*</option><option>/</option>
+</select>
+<input id="b" type="number" value="3">
+<button id="calc">Calculate</button><p id="result"></p> -->
+
+<script>
+  //  part 1.2 to create dashboard
+    // document.getElementById("calc").addEventListener("click", () => {
+    //     const a = Number(document.getElementById("a").value); // string -> number
+    //     const b = Number(document.getElementById("b").value);
+    //     const operation = document.getElementById("operator").value;
+    //     let result;
+        
+    //     if (operation === "+") result = a + b;
+    //     else if (operation === "-") result = a - b;
+    //     else if (operation === "*") result = a * b;
+    //     else result = b === 0 ? "Cannot divide by zero" : a / b;
+        
+    //     document.getElementById("result").textContent = 
+    //         `Result: ${result} (type: ${typeof result})`;
+    // });
+
+     
+
+        // 2. sir
+        //  var a=10;
+        // var b=20;
+        // var c=a+b;
+        // console.log(c);
+        // var d = prompt("enter the any number:-");
+        // alert(d); -->
+
+        // 3.factorial  code
+          document.getElementById("calc").addEventListener("click", () => {
+         const n = Number(document.getElementById("n").value);
+            let fact = 1;
+         let result;
+            for (let i = 1; i <= n; i++) {
+            fact=fact*i;
+            result=fact;
+            }
+            document.getElementById("result").textContent = result;
+          });
+
+        // 4 normal task
+        //   document.getElementById("calc").addEventListener("click", () => {
+        //  const a = Number(document.getElementById("a").value); // string -> number
+        //  const b = Number(document.getElementById("b").value);
+        //  const operation = document.getElementById("operator").value;
+        //  let result;
+        
+        //  if (operation === "+") result = a + b;
+        // else if (operation === "-") result = a - b;
+        // else if (operation === "*") result = a * b;
+        // else result = b === 0 ? "Cannot divide by zero" : a / b;
+        //  } );
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

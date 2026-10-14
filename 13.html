@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form onsubmit="return submitForm()">
+            <input type="text" id="name" placeholder="Enter the name">
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="result"></p>
+        <script>
+            function submitForm(){
+                let name=document.getElementById("name").value;
+               document.getElementById("result").innerHTML="Form submit by "+name;
+               return false;
+            }
+        </script>
+    </body>
+</html>

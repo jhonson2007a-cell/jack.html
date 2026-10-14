@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html >
+<body>
+
+    <!-- <p id="message">Click the button.</p>
+    <button onclick="ShowMessage()">Click ME</button> -->
+
+    <input type="text" id="name"
+    okeyup="showText()"
+    placeholder="Type your name">
+    <p id="output"></p>
+    <button onmouseover="overme()"
+    onmouseout="Outme()"
+    id="btn">Move mouse here</button>
+    <script>
+    
+    // function add1(a,b){
+    //     return a+b;
+    // }
+    // let add2=(a,b)=>{
+    //     return a+b;
+    //     };
+    //  console.log(add1(10,20));
+     //  console.log(add2(20,20));
+
+    // let add=(a,b)=>{
+    //     return a,b;
+    // };
+    // let multiple =(a,b)=> a*b;
+    // let square=number=>number*number;
+    // let massage=()=>"Welcome To Console In Inspect";
+    // console.log(add(10,20));
+    //  console.log(multiple(10,5));
+    //   console.log(square(4));
+    //    console.log(massage());
+
+
+        // function ShowMessage(){
+        //     document.getElementById("message").innerHTML="Button Was Clicked!";
+        // }
+
+
+        function showText(){
+            let value=document.getElementById("name").value;
+            document.getElementById("output").innerHTML=value;
+        }
+        function overme(){
+            document.getElementById("btn").innerHTML="Mouse is here";
+        }
+        function Outme(){
+            document.getElementById("btn").innerHTML="Move mouse here"
+        }
+
+</script>
+
+
+    </body>
+</html>

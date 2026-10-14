@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text" id="studentName" 
+        placeholder="Enter your name">
+
+    <button onclick="showName()">show name</button>
+    <p id="display"></p>
+<script>
+    function showName() {
+        let name= document.getElementById("studentName").value;
+        document.getElementById("display").innerText ="hello " + name;
+    }
+</script>
+</html>

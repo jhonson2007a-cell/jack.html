@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            width: min(100%, 520px);
+            padding: 24px;
+            border: 2px solid #ff4500;
+            border-radius: 8px;
+            background-color: #252526;
+        }
+
+        h1 {
+            margin: 0 0 20px;
+            color: #ff7043;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .form-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 12px;
+        }
+
+        .form-table th {
+            width: 36%;
+            padding-right: 14px;
+            text-align: left;
+            font-weight: normal;
+        }
+
+        .form-table td {
+            width: 64%;
+        }
+
+        .form-table input {
+            width: 100%;
+            padding: 9px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            background-color: #3c3c3c;
+            color: #ffffff;
+            font: inherit;
+        }
+
+        .form-table input:focus {
+            outline: 2px solid #ff7043;
+            outline-offset: 1px;
+        }
+
+        .button-cell {
+            padding-top: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ff4500;
+            border-radius: 4px;
+            background-color: transparent;
+            color: #ff7043;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff4500;
+            color: #ffffff;
+        }
+
+        @media (max-width: 420px) {
+            .form-container {
+                padding: 18px;
+            }
+
+            .form-table th {
+                width: 42%;
+                padding-right: 8px;
+            }
+
+            .form-table td {
+                width: 58%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="form-container">
+        <h1>Registration Form</h1>
+        <form action="#" method="post">
+            <table class="form-table">
+                <tbody>
+                    <tr>
+                        <th scope="row"><label for="name">Name:</label></th>
+                        <td><input type="text" id="name" name="name" autocomplete="name" required></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="username">Username:</label></th>
+                        <td><input type="text" id="username" name="username" autocomplete="username" required></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="password">Password:</label></th>
+                        <td><input type="password" id="password" name="password" autocomplete="new-password" required></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="confirmPassword">Confirm password:</label></th>
+                        <td><input type="password" id="confirmPassword" name="confirmPassword" autocomplete="new-password" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="button-cell">
+                            <button type="submit" id="save">Save</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </main>
+</body>
+</html>

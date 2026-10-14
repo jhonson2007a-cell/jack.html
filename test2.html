@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div>
+            <form action="#" method="POST">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="education">Education</label>
+                            <select id="education" name="Education">
+                                <option value="">Education</option>
+                                <option value="HS">Higher School</option>
+                                <option value="HSS">Higher SEC School</option>
+                                <option value="UG">Undergraduate</option>
+                                <option value="PG">Postgraduate</option>
+                                <option value="PHD">PHD</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="year">Passing Year</label>
+                            <select id="year" name="Year">
+                                <option value="">Passing Year</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                                <option value="2031">2031</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="mark">Marks</label>
+                            <input type="text" id="mark" name="Marks" required>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+                 <td colspan="2" class="button-cell" align="rigth">
+                <button type="button" id="addButton">Add</button>
+                </td>
+            </form>
+        </div>
+
+        <script>
+            const addButton = document.getElementById('addButton');
+            const educationForm = document.querySelector('form');
+
+            addButton.addEventListener('click', function () {
+                const education = document.getElementById('education');
+                const year = document.getElementById('year');
+                const mark = document.getElementById('mark');
+
+                if (!education.value || !year.value || !mark.value.trim()) {
+                    alert('Please fill in all fields.');
+                    return;
+                }
+
+                const tbody = document.getElementById('educationList');
+                const row = document.createElement('tr');
+
+                const educationCell = document.createElement('td');
+                educationCell.textContent = education.options[education.selectedIndex].text;
+                row.appendChild(educationCell);
+
+                const yearCell = document.createElement('td');
+                yearCell.textContent = year.options[year.selectedIndex].text;
+                row.appendChild(yearCell);
+
+                const markCell = document.createElement('td');
+                markCell.textContent = mark.value.trim();
+                row.appendChild(markCell);
+
+                tbody.appendChild(row);
+                educationForm.reset();
+            });
+        </script>
+    </body>
+</html>
+    

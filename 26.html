@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resoponsive Login Page</title>
+    <!-- <link rel="stylesheet" herf="26.css"> --> showerror
+    <style>
+        * {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+}
+h1{
+    color: #3455e7;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+.left{
+    width: 50%;
+    padding: 60px;
+}
+.right{
+   
+   background: #f8f9ff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.right img{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    /* max-width: 550px;
+    height: auto; */
+
+}
+
+
+
+h1{
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+p{
+    margin-bottom: 50px;
+}
+
+form>label{
+   display: block;
+   margin: 20px 0 10px;
+}
+
+input[type="email"],input[type="passwor"]{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+}
+
+input:focus{
+    outline: 1px solid #3455e7;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.options a{
+    color: gray;
+    text-decoration: none;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+button{
+    padding: 15px 40px;
+    background: #3455e7;
+    color: white;
+    border: 1px solid #3455e7;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup{
+    background: white;
+    color: #3455e7;
+}
+
+button:hover{
+    background: #203bb0;
+    color: white;
+}
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 80px;
+}
+
+.social a{
+    color: #3455e7;
+    text-decoration: none;
+}
+
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+.left ,.right{
+    width: 100%;
+}
+
+.left{
+    padding: 30px 20px;
+}
+
+.right{
+    padding: 30px;
+}
+
+.right img{
+    width: 75%;
+}
+
+h1{
+    font-size: 25px;
+}
+
+p{
+    margin-bottom: 30px;
+}
+
+.buttons{
+    gap: 10px;
+    margin-top: 30px;
+}
+
+button{
+    padding: 12px 25px;
+}
+
+.social{
+    margin-top: 40px;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Artificial Intelligence Drivring
+                Result for the Travel Industry
+            </h1>
+            <p>Welcome back! Please login to your account</p>
+            <form>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <div class="option">
+                    <label><input type="checkbox">Remember Me</label>
+                    <a href="#">forget Password</a>
+                </div>
+                <div class="buttons">
+                    <button type="submit">login</button>
+                    <button type="button" class="signup">Sign Up</button>
+                </div>
+                <div class="social">
+                    <span>Or login with</span>
+                    <a href="#">Facebook</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Google</a>
+                </div>
+                
+            </form>
+         </div>
+         <div class="right">
+                    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDpTAjOwTu-hHj5q4gDHGoyLxreBC3EO7pnKjT2kWTXg&s=10" alt="Person riding abicycle"> -->
+                    <img src="bicycle.jpg" alt="Person riding abicycle">
+                </div>
+    </div>
+    
+</body>
+</html>

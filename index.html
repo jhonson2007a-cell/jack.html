@@ -1,0 +1,438 @@
+[10:48 pm, 06/08/2026] jhonson lahre (_jack_): <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index2.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Professional Resume & CV Builder</h1>
+    <p>Create ATS Friendly Resume</p>
+</header>
+
+<div class="container">
+
+<!-- ================= FORM SECTION ================= -->
+
+<div class="form">
+
+<h2>Personal Information</h2>
+
+<label>Profile Photo</label>
+<input type="file" id="photo" accept="image/*">
+
+<label>Full Name</label>
+<input type="…
+[10:51 pm, 06/08/2026] jhonson lahre (_jack_): <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Professional Resume & CV Builder</h1>
+    <p>Create ATS Friendly Resume</p>
+</header>
+
+<div class="container">
+
+<!-- ================= FORM SECTION ================= -->
+
+<div class="form">
+
+<h2>Personal Information</h2>
+
+<label>Profile Photo</label>
+<input type="file" id="photo" accept="image/*">
+
+<label>Full Name</label>
+<input type="text" id="name">
+
+<label>Father Name</label>
+<input type="text" id="father">
+
+<label>Mother Name</label>
+<input type="text" id="mother">
+
+<label>Date of Birth</label>
+<input type="date" id="dob">
+
+<label>Gender</label>
+<select id="gender">
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+
+<label>Nationality</label>
+<input type="text" id="nationality">
+
+<label>Marital Status</label>
+<select id="marital">
+<option>Single</option>
+<option>Married</option>
+</select>
+
+<label>Address</label>
+<textarea id="address"></textarea>
+
+<label>Mobile Number</label>
+<input type="text" id="phone">
+
+<label>Email</label>
+<input type="email" id="email">
+
+<label>LinkedIn</label>
+<input type="text" id="linkedin">
+
+<label>GitHub</label>
+<input type="text" id="github">
+
+<label>Portfolio Website</label>
+<input type="text" id="portfolio">
+
+<label>Career Objective</label>
+<textarea id="objective"></textarea>
+
+<hr>
+
+<h2>Education Details</h2>
+
+<h3>Class 10</h3>
+
+<label>School Name</label>
+<input type="text" id="school10">
+
+<label>Board</label>
+<input type="text" id="board10">
+
+<label>Passing Year</label>
+<input type="number" id="year10">
+
+<label>Percentage / CGPA</label>
+<input type="text" id="percent10">
+
+<hr>
+
+<h3>Class 12</h3>
+
+<label>School Name</label>
+<input type="text" id="school12">
+
+<label>Board</label>
+<input type="text" id="board12">
+
+<label>Passing Year</label>
+<input type="number" id="year12">
+
+<label>Percentage</label>
+<input type="text" id="percent12">
+
+<hr>
+
+<h3>Graduation</h3>
+
+<label>College Name</label>
+<input type="text" id="college">
+
+<label>University</label>
+<input type="text" id="university">
+
+<label>Branch</label>
+<input type="text" id="branch">
+
+<label>Passing Year</label>
+<input type="number" id="gradyear">
+
+<label>CGPA</label>
+<input type="text" id="cgpa">
+
+<label>Project Title</label>
+<input type="text" id="project">
+
+<label>Project Description</label>
+<textarea id="projectdesc"></textarea>
+
+<button onclick="generateResume()">Generate Resume</button>
+
+<button onclick="window.print()">
+Download PDF
+</button>
+
+</div>
+
+<!-- ================= RESUME PREVIEW ================= -->
+
+<div class="resume">
+
+<div class="top">
+
+<img id="previewPhoto"
+src="https://via.placeholder.com/150">
+
+<h1 id="rname">Your Name</h1>
+
+<p id="rphone"></p>
+
+<p id="remail"></p>
+
+<p id="raddress"></p>
+
+</div>
+
+<h2>Career Objective</h2>
+
+<p id="robjective"></p>
+
+<h2>Education</h2>
+
+<table border="1" width="100%">
+<tr>
+<th>Qualification</th>
+<th>Institute</th>
+<th>Year</th>
+<th>Percentage / CGPA</th>
+</tr>
+
+<tr>
+<td>10th</td>
+<td id="rschool10"></td>
+<td id="ryear10"></td>
+<td id="rpercent10"></td>
+</tr>
+
+<tr>
+<td>12th</td>
+<td id="rschool12"></td>
+<td id="ryear12"></td>
+<td id="rpercent12"></td>
+</tr>
+
+<tr>
+<td>Graduation</td>
+<td id="rcollege"></td>
+<td id="rgradyear"></td>
+<td id="rcgpa"></td>
+</tr>
+
+</table>
+
+<h2>Project</h2>
+
+<h3 id="rproject"></h3>
+
+<p id="rprojectdesc"></p>
+
+<!-- More sections will be added in Part 2 -->
+
+</div>
+
+</div>
+
+<hr>
+
+<h2>Skills</h2>
+
+<label>Technical Skills</label>
+<textarea id="skills"
+placeholder="HTML, CSS, JavaScript, Java, Python"></textarea>
+
+<label>Soft Skills</label>
+<textarea id="softskills"
+placeholder="Leadership, Communication"></textarea>
+
+<hr>
+
+<h2>Certifications</h2>
+
+<label>Certification 1</label>
+<input type="text" id="cert1">
+
+<label>Certification 2</label>
+<input type="text" id="cert2">
+
+<label>Certification 3</label>
+<input type="text" id="cert3">
+
+<hr>
+
+<h2>Internship</h2>
+
+<label>Company Name</label>
+<input type="text" id="interncompany">
+
+<label>Internship Description</label>
+<textarea id="internship"></textarea>
+
+<hr>
+
+<h2>Experience</h2>
+
+<label>Company Name</label>
+<input type="text" id="company">
+
+<label>Job Role</label>
+<input type="text" id="role">
+
+<label>Experience Details</label>
+<textarea id="experience"></textarea>
+
+<hr>
+
+<h2>Achievements</h2>
+
+<textarea id="achievement"></textarea>
+
+<hr>
+
+<h2>Languages Known</h2>
+
+<input type="text"
+id="languages"
+placeholder="English, Hindi">
+
+<hr>
+
+<h2>Hobbies</h2>
+
+<textarea id="hobbies"></textarea>
+
+<hr>
+
+<h2>References</h2>
+
+<label>Reference Name</label>
+
+<input type="text" id="reference">
+
+<label>Contact Number</label>
+
+<input type="text" id="referencephone">
+
+<hr>
+
+<h2>Declaration</h2>
+
+<textarea id="declaration">
+I hereby declare that the above information is true to the best of my knowledge.
+</textarea>
+
+<hr>
+
+<label>Place</label>
+
+<input type="text" id="place">
+
+<label>Date</label>
+
+<input type="date" id="date">
+
+<!-- ================= Resume Preview ================= -->
+
+<hr>
+
+<h2>Skills</h2>
+
+<p id="rskills"></p>
+
+<h2>Soft Skills</h2>
+
+<p id="rsoftskills"></p>
+
+<h2>Certifications</h2>
+
+<ul>
+<li id="rcert1"></li>
+<li id="rcert2"></li>
+<li id="rcert3"></li>
+</ul>
+
+<h2>Internship</h2>
+
+<h3 id="rinterncompany"></h3>
+
+<p id="rinternship"></p>
+
+<h2>Experience</h2>
+
+<h3 id="rcompany"></h3>
+
+<b id="rrole"></b>
+
+<p id="rexperience"></p>
+
+<h2>Achievements</h2>
+
+<p id="rachievement"></p>
+
+<h2>Languages</h2>
+
+<p id="rlanguages"></p>
+
+<h2>Hobbies</h2>
+
+<p id="rhobbies"></p>
+
+<h2>Reference</h2>
+
+<p id="rreference"></p>
+
+<p id="rreferencephone"></p>
+
+<h2>Declaration</h2>
+
+<p id="rdeclaration"></p>
+
+<br><br>
+
+<div style="display:flex;justify-content:space-between;">
+
+<div>
+<b>Place:</b>
+
+<span id="rplace"></span>
+</div>
+
+<div>
+<b>Date:</b>
+
+<span id="rdate"></span>
+</div>
+
+</div>
+
+<br><br>
+
+<div style="text-align:right">
+
+_______
+
+<h3 id="rsignature">
+Signature
+</h3>
+
+<script src="index3.js"></script>
+
+</body>
+</html>

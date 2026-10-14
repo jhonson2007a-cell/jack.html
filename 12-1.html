@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <ul id="list"></ul>
+        <button onclick="AddItem()">Add Subject</button>
+    </body>
+
+<script>
+function AddItem(){
+    let item=document.createElement("li");
+    item.innerHTML="JavaScript";
+
+    document.getElementById("list").appendChild(item);
+}
+</script>
+</html>
